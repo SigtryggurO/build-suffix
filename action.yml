@@ -1,0 +1,8 @@
+name: 'Add suffix if not main branch'
+description: 'Returns branch name as suffix'
+outputs:
+  suffix:
+    description: 'The suffix'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
