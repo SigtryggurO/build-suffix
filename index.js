@@ -34,7 +34,6 @@ try {
         suffix = suffix.replaceAll('Ý', 'Y');
         suffix = suffix.replaceAll('ý', 'y');
         suffix = suffix.replaceAll(/[^0-9a-zA-Z-]/g, '-');
-        suffix = `${suffix}`;
         console.log(`Not main branch, set variable 'suffix' as ${suffix}`)
     }
     else {
