@@ -1,17 +1,23 @@
 {
   "name": "setsuffixforbuild",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ncc build index.js --license licenses.txt"
   },
-  "keywords": [],
+  "keywords": [
+    "suffix",
+    "versioning"
+  ],
   "author": "Sigtryggur Ómarsson",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
   }
 }

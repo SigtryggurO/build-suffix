@@ -1,7 +1,10 @@
 
-# Add suffix action
+# Create suffix action
 
-This action outputs the branch name as a suffix for versioning
+This action outputs the branch name as a suffix for versioning.
+Icelandic characters are replaced by their anglicized version,
+all other special characters are replaced by with `-` so not
+to cause issues in build systems.
 
 ## Outputs
 
@@ -13,7 +16,7 @@ The versioning suffix
 
 ```yaml
 id: setsuffix
-uses: SigtryggurO/build-suffix-action@v1.0
+uses: SigtryggurO/build-suffix-action@v1.2
 ```
 
 ## How to build action
